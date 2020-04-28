@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private Facilit facilit = new Facilit();
     private Teste teste = new Teste();
@@ -15,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         facilit.initializeDatabase(this);
 
-        teste.setId("003");
-        teste.setName("nome");
+        teste.setId("004");
+        teste.setName("nom");
         teste.setPass("444");
-        facilit.insert("alunos", teste.getId(), Teste.class);
+        facilit.insert("alunos", teste.getId(), teste.toMap());
     }
 }

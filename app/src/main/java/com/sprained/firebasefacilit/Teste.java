@@ -2,6 +2,9 @@ package com.sprained.firebasefacilit;
 
 import com.google.firebase.database.annotations.Nullable;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Teste {
     private String id;
     private String name;
@@ -15,7 +18,15 @@ public class Teste {
         this.pass = pass;
     }
 
-    @Nullable
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("uid", id);
+        result.put("name", name);
+        result.put("pass", pass);
+
+        return result;
+    }
+
     public String getId() {
         return id;
     }
