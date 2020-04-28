@@ -1,0 +1,3 @@
+rootProject.name='Firebase Facilit'
+include ':app'
+include ':firebasefacilit'
