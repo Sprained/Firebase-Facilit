@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         facilit.initializeDatabase(this);
 
-        teste.setId("005");
+        teste.setId("004");
         teste.setName("nom");
         teste.setPass("444");
         facilit.insert("alunos", teste.getId(), teste.toMap());

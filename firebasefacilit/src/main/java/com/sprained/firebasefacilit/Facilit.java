@@ -18,6 +18,7 @@ public class Facilit {
         firebaseDatabase = firebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
+
     public void insert(String child, String id, Map values){
         databaseReference.child(child).child(id).setValue(values);
     }
